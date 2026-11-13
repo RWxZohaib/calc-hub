@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# calc-hub
 
-## Getting Started
+calc-hub is a planned website of accurate, clearly explained calculators for people in the United States and Canada.
 
-First, run the development server:
+**Status:** Phase 1 (foundation) — information pages and the build are complete. No calculators are published yet. The first five calculators are planned for Phase 2.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Node.js 24** (the project's standard, pinned in `.node-version`)
+- **npm** (installed with Node.js)
+- **Git** (for version control)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Common commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run these in the project folder:
 
-## Learn More
+| Command | What it does |
+|---|---|
+| `npm install` | Installs the project's packages |
+| `npm run dev` | Starts a local preview at http://localhost:3000 |
+| `npm run build` | Builds the static website into the `out` folder |
+| `npm run lint` | Checks the code for problems |
+| `npm test` | Runs automated tests |
 
-To learn more about Next.js, take a look at the following resources:
+## Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Project documents are in the `docs/` folder:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `PROJECT_PLAN.md`: phases and current status
+- `ARCHITECTURE.md`: technology and structure
+- `TESTING.md`: tests and checks performed
+- `DEPLOYMENT.md`: hosting setup and checks
+- `CHANGELOG.md`: decisions and changes
+- `CURSOR_RULES.md`: working rules for development
 
-## Deploy on Vercel
+## Budget
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is built and hosted at **$0**. It uses only free tools, with no paid services, subscriptions, or domain purchases.
