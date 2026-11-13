@@ -15,7 +15,7 @@ export default function PrivacyPage() {
   return (
     <Container>
       <PageIntro title="Privacy Policy">
-        <p>Last updated: 13 November 2026</p>
+        <p>Last updated: 14 November 2026</p>
       </PageIntro>
 
       <div className="space-y-8 text-[var(--color-ink)]">
@@ -39,9 +39,13 @@ export default function PrivacyPage() {
             website. If we add any in the future, we will update this policy before enabling
             them.
           </p>
+          
           <p className="mt-3">
-            Cloudflare may set cookies needed for its security and delivery features.
-          </p>
+  At the time of our last check on 14 November 2026, no cookies were set on this
+  website. Cloudflare may set cookies in the future for its security and delivery
+  features. If that changes, we will update this policy.
+</p>
+          
         </section>
 
         <section>
