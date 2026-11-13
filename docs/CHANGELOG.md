@@ -1,6 +1,19 @@
 # Changelog
 
 All decisions and changes to the project, most recent first.
+### 14 November 2026: Live deployment on Cloudflare Workers
+
+- Site deployed to `https://calc-hub.mzohaib15009.workers.dev` from the GitHub repository (`main` branch).
+- Hosting uses Cloudflare Workers with static assets on the free plan. No payment method, no paid subscription.
+- Added `wrangler.jsonc` to publish the `out` folder and to show our 404 page for unknown addresses.
+- Corrected the site address in `src/data/site.ts` to the live Workers address.
+- Corrected a typo in `wrangler.jsonc` (`not_handling` changed to `not_found_handling`).
+- Finalised the Privacy Policy cookie statement after checking the live site (no cookies set).
+- Corrected the Privacy Policy hosting wording from "Cloudflare Pages" to "Cloudflare Workers."
+- Live Lighthouse (mobile, Incognito): Performance 96, Accessibility 100, Best Practices 100, SEO 100.
+- Web Analytics checked: not enabled. Workers Logs and Traces disabled.
+- Phase 1 deployment checks complete.
+
 
 ## Phase 1: Foundation (in progress)
 

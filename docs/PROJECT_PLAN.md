@@ -9,7 +9,7 @@ Build one professional, accurate, mobile-friendly calculator website for users i
 | Phase | Status | Summary |
 |---|---|---|
 | Phase 0: Research and planning | Complete (approved) | Market research, candidate selection, hosting, budget, and architecture decisions |
-| Phase 1: Foundation | Nearly complete | Project setup, design foundation, shared components, information pages, SEO basics, local testing, documentation. Cloudflare deployment is the remaining step. |
+| Phase 1: Foundation | Complete | Project setup, design foundation, shared components, information pages, SEO basics, local testing, documentation, and live deployment on Cloudflare Workers. |
 | Phase 2: First five calculators | Not started (needs separate approval) | Canada GST/HST/PST, US Sales Tax, Fuel Cost, GPA, and Hourly to Annual Salary |
 | Phase 3: Expansion | Planned | 10 to 15 calculators |
 | Phase 4: Growth | Planned | 30 calculators, with usage and search review |
@@ -18,8 +18,12 @@ Build one professional, accurate, mobile-friendly calculator website for users i
 
 ## Current status
 
-- Local development, build, tests, lint, layout, keyboard, and Lighthouse checks are complete.
-- Remaining Phase 1 steps: free-plan check on Cloudflare Pages, deployment, live checks, Web Analytics status check, cookie check, and final documentation updates.
+## Current status
+
+- Phase 1 is complete. The site is live at `https://calc-hub.mzohaib15009.workers.dev`.
+- Live checks passed: all pages, sitemap, robots file, 404 page, Lighthouse (Performance 96, Accessibility 100, Best Practices 100, SEO 100).
+- Web Analytics is not enabled. The Privacy Policy reflects this.
+- Phase 2 has not started. It needs the owner's written approval.
 
 ## Rules for every calculator (Phase 2 onwards)
 

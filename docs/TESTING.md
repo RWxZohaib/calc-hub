@@ -42,9 +42,28 @@ Notes on Performance:
 | All header, footer, and in-page links open their pages | Passed | 14 November 2026 |
 | Contact page contains no form and no personal email | Confirmed by review | 14 November 2026 |
 
-## Still to check (after deployment)
+## Live site checks (Cloudflare Workers, 14 November 2026)
 
-- Live site: all pages, sitemap, robots file, and 404 page on the `pages.dev` address.
-- Live Lighthouse scores (mobile).
-- Web Analytics status in the Cloudflare dashboard.
-- Cookies set on the live site, then update the Privacy Policy cookie sentence to match.
+| Check | Result |
+|---|---|
+| All seven pages load on `https://calc-hub.mzohaib15009.workers.dev` | Passed |
+| Header and footer links open their pages | Passed |
+| `/sitemap.xml` lists six pages with the live address | Passed |
+| `/robots.txt` allows crawling and gives the sitemap line | Passed |
+| Missing address (`/does-not-exist`) shows the 404 page | Passed (after fixing a configuration field name) |
+| Live Lighthouse, mobile, Incognito | Performance 96, Accessibility 100, Best Practices 100, SEO 100 |
+| Web Analytics status | Not enabled (recorded as observed, not assumed) |
+| Workers Logs and Workers Traces | Disabled |
+| Cookies on the homepage and About page | None set at the time of the check |
+| Privacy Policy shows Cloudflare Workers (not Pages) and the 14 November 2026 date | Passed |
+
+## Issues found and fixed during deployment
+
+| Issue | Fix |
+|---|---|
+| Sitemap build error ("output: export" needs a static route setting) | Added `dynamic = "force-static"` to `sitemap.ts` and `robots.ts` |
+| Contact page missing from build (file saved in the wrong folder) | Created the `contact` folder and page |
+| Local warning about the project root (a file in the home folder) | Set `turbopack.root` to the project folder |
+| Missing-page address showed the browser's default error | Corrected `not_found_handling` (typo: `not_handling`) |
+| Privacy Policy said "Cloudflare Pages" after the move to Workers | Corrected to "Cloudflare Workers" |
+| Initial Lighthouse Performance 76 (browser extensions affected the test) | Re-run in Incognito: 92. Live site: 96. |
