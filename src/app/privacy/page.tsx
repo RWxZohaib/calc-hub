@@ -22,7 +22,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-2xl font-semibold">Hosting and technical data</h2>
           <p className="mt-3">
-            This website is hosted by Cloudflare, Inc. through Cloudflare Pages. To deliver
+            This website is hosted by Cloudflare, Inc. through Cloudflare Workers. To deliver
             the pages to your browser and protect the service, Cloudflare may process
             technical information when you visit. This can include your IP address, system
             configuration information, the URL of the page that referred you, and your locale
