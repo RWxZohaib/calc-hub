@@ -18,17 +18,24 @@ export default function HomePage() {
     <Container>
       <PageIntro title="Accurate US and Canadian calculators, with the rules explained">
         <p>
-          calc-hub is building a set of practical calculators for the United States and
-          Canada. Each calculator shows its formula, its assumptions, and where its
-          figures come from.
+          calc-hub offers practical calculators for the United States and Canada. Each
+          calculator shows its formula, its assumptions, and where its figures come from.
         </p>
       </PageIntro>
 
-      <section aria-labelledby="status-heading" className="mb-10">
-        <Card title="Our first calculators are coming soon">
+      <section aria-labelledby="calc-heading" className="mb-10">
+        <Card title="Five calculators are available now">
           <p>
-            The first five calculators will launch in our next release. Until then, this
-            site contains only information pages, so there is nothing to calculate yet.
+            Hourly to annual salary, fuel cost, GPA, US sales tax, and Canada GST, HST, and PST.
+            Each calculator states its limits and the date its rates were last checked.
+          </p>
+          <p className="mt-4">
+            <Link
+              href="/calculators"
+              className="font-semibold text-[var(--color-brand)] hover:text-[var(--color-brand-dark)] hover:underline"
+            >
+              See all calculators
+            </Link>
           </p>
         </Card>
       </section>
@@ -39,14 +46,13 @@ export default function HomePage() {
         </h2>
         <Card title="Where our rates come from">
           <p>
-            Tax rates are taken from official government sources. Each rate will show the
-            date it was last checked.
+            Tax rates are taken from official government sources. Each rate shows the date it
+            was last checked.
           </p>
         </Card>
         <Card title="Estimates are labelled">
           <p>
-            Where a result depends on your location or on averages, the page will say so
-            clearly.
+            Where a result depends on your location or on averages, the page says so clearly.
           </p>
         </Card>
         <Card title="Read how we check our numbers">

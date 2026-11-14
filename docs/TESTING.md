@@ -66,4 +66,4 @@ Notes on Performance:
 | Local warning about the project root (a file in the home folder) | Set `turbopack.root` to the project folder |
 | Missing-page address showed the browser's default error | Corrected `not_found_handling` (typo: `not_handling`) |
 | Privacy Policy said "Cloudflare Pages" after the move to Workers | Corrected to "Cloudflare Workers" |
-| Initial Lighthouse Performance 76 (browser extensions affected the test) | Re-run in Incognito: 92. Live site: 96. |
+| Initial Lighthouse Performance 76 (browser extensions affected the test) | Re-run in Incognito: 92. Live site: 96. |- Canada GST, HST, and PST Network check (after pressing Calculate): 0 requests.

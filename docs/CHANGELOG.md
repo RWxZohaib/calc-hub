@@ -13,7 +13,17 @@ All decisions and changes to the project, most recent first.
 - Live Lighthouse (mobile, Incognito): Performance 96, Accessibility 100, Best Practices 100, SEO 100.
 - Web Analytics checked: not enabled. Workers Logs and Traces disabled.
 - Phase 1 deployment checks complete.
+## Phase 2: Calculators (built and checked; awaiting publication approval)
 
+### 14 November 2026: Five calculators and the calculators list
+
+- Built and tested five calculators: Hourly to Annual Salary, Fuel Cost, GPA, US Sales Tax, and Canada GST, HST, and PST.
+- Rates verified: Canadian rates from the CRA and provincial government sources; US state averages from the Tax Foundation's table dated 1 January 2026, with four states (California, Texas, Tennessee, Louisiana) spot-checked against state revenue departments.
+- Formula sources recorded in `docs/FORMULA_SOURCES.md`. Keyword research recorded in `docs/KEYWORD_RESEARCH.md` as evidence and assumptions only.
+- Added the calculators list page (`/calculators`) and related-calculator links.
+- Sitemap now lists the calculators from the registry.
+- Homepage updated to say five calculators are available.
+- Local checks passed: lint, 68 unit tests, production build, Lighthouse (all calculators: Performance 90 to 95, Accessibility 100, Best Practices 96, SEO 100), keyboard checks, and input-privacy checks.
 
 ## Phase 1: Foundation (in progress)
 
